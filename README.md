@@ -4,9 +4,7 @@ sudo yum update
 
 sudo yum install java-17-amazon-corretto-headless
 
-Go to VisualStudio Code
-
-at the bottom shows "MAVEN"  -> choose Lifecycle -> clean -> build
+Go to VisualStudio Code, at the bottom shows "MAVEN"  -> choose Lifecycle -> clean -> build
 
 Go to folder, select "target", copy jar 
 
@@ -20,9 +18,15 @@ To test the working of database, use Postman, then copy public IP address
 select POST and then paste it like (IP address):8080/saveProduct
 
 paste the JSON like this
+
 {
+
     "productName": "product",
+    
     "description": "description",
+    
     "price": 2999.00,
+    
     "status": "available"
+    
 }
