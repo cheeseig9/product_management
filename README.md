@@ -4,6 +4,8 @@ sudo yum update
 
 sudo yum install java-17-amazon-corretto-headless
 
+In IDE, change the database (after create RDS) information at line 1, 2 and 3
+
 Go to VisualStudio Code, at the bottom shows "MAVEN"  -> choose Lifecycle -> clean -> build
 
 Go to folder, select "target", copy jar 
