@@ -1,4 +1,4 @@
-# product_management
+# product_management (for BACKEND) 
 
 sudo yum update
 
@@ -18,15 +18,15 @@ To test the working of database, use Postman, then copy public IP address
 select POST and then paste it like (IP address):8080/saveProduct
 
 paste the JSON like this
-
-{
-
+   
+    {
     "productName": "product",
     
     "description": "description",
     
     "price": 2999.00,
     
-    "status": "available"
-    
-}
+    "status": "available" 
+    }
+
+
