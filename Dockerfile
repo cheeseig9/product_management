@@ -1,6 +1,3 @@
-FROM openjdk:11
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN ./mvnw package
-EXPOSE 8080
-CMD ["java", "-jar", "target/product_management.jar"]
+FROM openjdk:20
+COPY target/product_management-0.0.1-SNAPSHOT.jar product_management-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "/product_management-0.0.1-SNAPSHOT.jar"]
