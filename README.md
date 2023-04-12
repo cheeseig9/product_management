@@ -8,7 +8,7 @@ In IDE, change the database (after create RDS) information at line 1, 2 and 3
 
 Find ProductController.java
 
-Change front end IP address at line 16, @CrossOrigin(origins = "http://front-end-address:3000") 
+Change front end IP address at line 16, @CrossOrigin(origins = "http://[front-end-address]:3000") 
 
 Go to VisualStudio Code, at the bottom shows "MAVEN"  -> choose Lifecycle -> clean -> build (to export jar.jpg)
 
