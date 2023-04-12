@@ -36,4 +36,30 @@ paste the JSON like this
     "status": "available" 
     }
 
+=============
 
+- Create new image:
+
+docker build -t product_management .
+
+- Run image:
+
+docker run -d -p 8080:8080 --name product_app product_management
+
+- Access into a container
+
+docker exec -it product_app bash
+
+ls 
+
+- Force end process:
+
+docker ps
+
+docker rm product_app -f
+
+- Delete docker image permanently:
+
+docker image ls
+
+docker rmi -f --no-prune [repository]
